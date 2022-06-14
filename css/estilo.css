@@ -44,5 +44,16 @@ table {
 
 #topo ul li{
     float: right;
-    padding: 10px 110px 0 0  ;
+    padding: 10px 110px 0 0;
+	border: 1px solid red;
+	font-size: 20px;
+}
+
+#topo ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+#topo ul li a:hover{
+
 }
