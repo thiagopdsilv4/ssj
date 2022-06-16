@@ -43,18 +43,66 @@
                     </li>
                 </ul>
             </div> <!--fim topo-->
-            <!--
-            <div id="slider">
-                <figure>
-                    <img src="imagens/taxi.jpg" alt="">
-                    <img src="imagens/doutor.jpg" alt="">
-                    <img src="imagens/cidade.jpg" alt="">
-                    <img src="imagens/mundo.jpg" alt="">
-                    <img src="imagens/tecnologia.jpg" alt="">
-                    
-                </figure>
-            </div>-->
+            
+            <div class="slider">
+                <div class="slides">
+                    <!--Radio Buttons-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!--fim Radio Buttons-->
+
+                    <!--Slide images-->
+                    <div class="slide first">
+                        <img src="imagens/cidade.jpg" alt="Imagem 1">
+                    </div>
+
+                    <div class="slide">
+                        <img src="imagens/doutor.jpg" alt="Imagem 2">
+                    </div>
+
+                    <div class="slide">
+                        <img src="imagens/tecnologia.jpg" alt="Imagem 3">
+                    </div>
+
+                    <div class="slide">
+                        <img src="imagens/mundo.jpg" alt="Imagem 4">
+                    </div>
+
+                    <!--FIM Slide images-->
+                    <!--Navigation auto-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+
+                </div>
+
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+
+            </div>
         </div><!--fim container-->
 
+        <div id="body-1" >
+            <div class="caixaTitulo">
+                <h3 class="tituloSec"> Titulo Genérico</h3>
+            </div>
+            <div class="bodyLimitador">                
+                <div class="generica1">1</div>
+                <div class="generica1">2</div>
+                <div class="generica1">3</div>
+                <div class="generica1">4</div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
