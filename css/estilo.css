@@ -45,7 +45,7 @@ table {
 
 /*TOPO CONTATO*/
 #contato-topo{
-	padding-left: 20%;
+	padding-left: 29%;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	background: #F2F2F2;	
@@ -54,7 +54,7 @@ table {
 #topo{
 	/* background: #F2F2F2;*/
 	padding: 15px;
-	padding-left: 20%;
+	padding-left: 29%;
 	padding-bottom: 15px;
 }
 
@@ -71,6 +71,25 @@ table {
 
 #topo ul li a:hover{
 	color: #778899;
+}
+
+#topo ul ul{
+	position: absolute;
+	min-width: 200px;
+	display: none;
+	background: #778899;
+}
+
+#topo ul ul li{
+	display: block;
+	background: #778899;
+}
+
+#topo ul li:hover ul{
+	display: block;
+	line-height: 30px;
+	font-size: 16px;
+	z-index: 1;
 }
 
 /* CSS PARA SLIDER*/
@@ -325,8 +344,8 @@ button.menuItem:hover, button.menuItem.is-open {
 }
 
 .footer-col{
-	width: 25%;
 	padding: 0 15px;
+	padding-left: 20%;
 }
 
 .footer-col h4{
