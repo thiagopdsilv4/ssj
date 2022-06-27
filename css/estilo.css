@@ -43,6 +43,10 @@ table {
 	border-spacing: 0;
 }
 
+a{
+	text-decoration: none;
+}
+
 /*TOPO CONTATO*/
 #contato-topo{
 	padding-left: 29%;
@@ -202,14 +206,16 @@ table {
 /* INICIO DAS CONVENCOES*/
 
 .convencoes{
-	margin-top: 15px;
-	font-size: 40px;
+	margin-top: 50px;
+	font-size: 40px;	
+	margin-bottom: 15px;
 }
 
 .documentos{
 	display: inline-block;
 	padding-left: 20.3%;
 	padding-bottom: 10px;
+	margin-bottom: 30px;
 }
 
 .documentos ul li{
@@ -362,7 +368,7 @@ button.menuItem:hover, button.menuItem.is-open {
 	position: absolute;
 	left: 0;
 	bottom: -10px;
-	background-color: #e91e63;
+	background-color: #eee685;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
@@ -386,7 +392,6 @@ button.menuItem:hover, button.menuItem.is-open {
 
 .footer-col ul li a:hover{
 	color: #ffffff;
-	padding-left: 8px;
 }
 /* CASO SEJA ADICIONADO ICONES SOCIAIS 
 
@@ -428,3 +433,31 @@ button.menuItem:hover, button.menuItem.is-open {
 
 
 /* ------ Fim do Footer ------*/
+
+.conteudo-titulo{
+    position: absolute;
+    top: 45%;
+    width: 100%;  
+    text-align: center;
+}
+
+
+.conteudo-titulo span{
+    padding: 18px;
+    font-size: 40px;
+	font-weight: 800;
+    letter-spacing: 5px;
+    color: #b87d3f; 
+    text-transform: uppercase;
+}
+
+.emitir a{
+	color: #b87d3f;
+	font-size: 25px;
+	padding: 7px;
+}
+
+.emitir:hover{
+	color: #fff;
+	background-color: #1C1C1C;
+}
