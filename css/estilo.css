@@ -363,6 +363,10 @@ button.menuItem:hover, button.menuItem.is-open {
 	position: relative;
 }
 
+.footer-col ul li a{
+	line-height: 20px;
+}
+
 .footer-col h4::before{
 	content: '';
 	position: absolute;
