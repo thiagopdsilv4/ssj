@@ -1,8 +1,8 @@
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, b, sub, sup, tt, var,
+small, strike, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
@@ -48,18 +48,24 @@ a{
 }
 
 /*TOPO CONTATO*/
+
+ 
 #contato-topo{
-	padding-left: 29%;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	background: #F2F2F2;	
+	height: 40px;
+	max-height: 100%;
+	background: #F2F2F2;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 #topo{
-	/* background: #F2F2F2;*/
-	padding: 15px;
+	padding: 45px;
 	padding-left: 29%;
 	padding-bottom: 15px;
+	width: 100%;
+	display: none;
 }
 
 #topo ul li{
@@ -97,9 +103,12 @@ a{
 }
 
 /* CSS PARA SLIDER*/
+/* CSS PARA SLIDER*/
+
 
 .slider{
-	margin: 0 auto;
+	margin: auto;
+	margin-top:40px;
 	width: 800px;
 	height: 400px;
 	overflow: hidden;
@@ -123,6 +132,7 @@ a{
 
 .slide img{
 	width: 800px;
+	height: 400px;
 }
 
 .manual-navigation{
@@ -163,42 +173,6 @@ a{
 
 #radio4:checked ~ .first{
 	margin-left: -75%;
-}
-
-.navigation-auto div{
-	border: 2px solid #20a6ff;
-	padding: 5px;
-	border-radius: 10px;
-	cursor: pointer;
-	transition: 1s;
-}
-
-.navigation-auto{
-	 position: absolute;
-	 width: 800px;
-	 margin-top: 360px;
-	 display: flex;
-	 justify-content: center;
-}
-
-.navigation-auto div:not(:last-child){
-	margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-	background-color: #fff;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
-	background-color: #fff;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-	background-color: #fff;
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4{
-	background-color: #fff;
 }
 
 /* FIM PARA SLIDER*/
@@ -243,11 +217,151 @@ a{
 /* FIM DAS CONVENCOES*/
 
 
+
+
+/* CAIXA MODAL 1.0 */
+
+
+#body-0{
+	/*display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #8B8B7A;
+	width: 100%;
+	height: 300px;
+	background-color: #DCDCDC;*/
+	width: 100%;
+	height: 250px;
+}
+
+.bodyLimitador2{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	/*background-color: #4F4F4F;*/
+	width: 100%;
+	max-width: 1200px;
+  	height: 100%;
+	margin: auto;
+	
+}
+
+.boxModal {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #74C5CD;
+	width: 30%;
+	height: 150px;
+	margin: auto;
+	
+}
+
+.tituloModal{
+	margin-bottom: 10px;
+	padding: 5px;
+	border-radius: 10px;
+	background-color: white;
+	color: cadetblue;
+}
+/*
+.checkboxModal {
+	
+}
+
+#modalAtivador:checked + .modal {
+
+	display: flex;
+
+}
+*/
+.modal{
+/*	display: none;
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);  */
+	z-index:1;
+    position: fixed;
+    top:0;
+    left:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0.25s ease-in-out , opacity 0.25s ease-in-out, transform 0.25s ease-in-out;
+
+}
+.modal-content{
+    
+    background-color: white;
+    padding: 16px 24px;    
+    width: 384px;
+    border-radius: 0.5rem;
+}
+.trigger {
+	cursor: pointer;
+}
+.close-button{
+   float: right;
+   width: 24px;
+   line-height: 24px;
+   text-align: center;
+   cursor: pointer;
+   border-radius: 0.25rem;
+   background-color: lightgray;
+}
+.close-button:hover{
+    background-color: darkgray;
+}
+
+.show-modal{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);    
+}
+
+
+/*
+.modal .fecharModal {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.modal .fecharModal:hover {
+	cursor: pointer;
+	color: red;
+}
+
+.modal .conteudoModal {
+	width: 60%;
+	height: 30%;
+	background-color: white;
+}
+*/
+
+/* ------ FIM CAIXA MODAL ------ */
+
+
+
+
 .caixaTitulo{
 	display: flex;
-	background-color: #1C1C1C;
+	/*background-color: #1C1C1C;*/
 	width: 100%;
-	max-width: 950px;
+	max-width: 1200px;
 	height: 30px;
 	margin: auto;
 	
@@ -256,43 +370,47 @@ a{
 .tituloSec{
 	width: 50%;
 	height: 50%;
-	background-color: #F2F2F2;
+	/*background-color: #F2F2F2;*/
 	text-align: center;
 	margin: auto;
-	line-height: 100%;
-	
+	line-height: 100%;	
 
 }
+
+
+
+
+
+/* ------ Menu de Drop ------ */
+
+#body-1{
+	/*/background-color: #A9A9A9;*/
+	width: 100%;
+	height: auto;
+	margin-bottom: 50px;
+
+}
+
 .bodyLimitador{
 	display: flex;
 	flex-direction: column;
-	background-color: #4F4F4F;
+	/*background-color: #4F4F4F;*/
 	width: 100%;
-	max-width: 950px;
+	max-width: 1200px;
   /*height: 100%; */
 	margin: auto;
 	
 }
 
-
-#body-1{
-	background-color: #A9A9A9;
-	width: 100%;
-	height: 600px;
-
-}
-
-/* ------ Menu de Drop ------ */
-
 .menuDrop {
 	width: 80%;
-	max-width: 600px;
+	max-width: 800px;
 	margin: 20px auto;
 }
   
 button.menuItem {
 	width: 100%;
-	background-color: whitesmoke;
+	background-color: #EEC900;
 	border: none;
 	outline: none;
 	text-align: left;
@@ -315,7 +433,7 @@ button.menuItem.is-open:after {
 }
   
 button.menuItem:hover, button.menuItem.is-open {
-	background-color: #ddd;
+	background-color: #eee685;
 }
   
 .menuConteudo {
@@ -338,6 +456,70 @@ button.menuItem:hover, button.menuItem.is-open {
 
 
 
+/*	  Div Localização	 */
+
+#body-2{
+	/*background-color: #DCDCDC;*/
+	width: 100%;
+	height: 600px;
+
+}
+
+
+.bodyLimitador3{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #4F4F4F;
+	width: 100%;
+	max-width: 1200px;
+	max-height: 500px;
+  	height: 100%;
+	margin: auto;
+}
+
+.mapaGoogle {
+	max-width: 750px;
+	width: 100%;
+
+
+}
+
+.infoAtendimento {
+	max-width: 375px;
+	width: 100%;
+	height: 423px;
+	max-height: 100%;
+	margin-left: 15px;
+}
+
+.infoAtendimento h3{
+	
+	justify-content: center;
+}
+/*
+.infoAtendimento h3::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #eee685;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}*/
+
+.conteudoAtendimento {
+	margin-top: 30px;
+	
+}
+
+
+/* ------ Fim Localização ------  */
+
+
+
 /* ------ Footer ------ */
 .row{
 	display: flex;
@@ -345,13 +527,13 @@ button.menuItem:hover, button.menuItem.is-open {
 }
 
 .footer{
-	background-color: #313B48;
-	padding: 55px 0;
+	background-color: #23232E;
+	padding: 30px 0;
 }
 
 .footer-col{
 	padding: 0 15px;
-	padding-left: 20%;
+	padding-left: 17%;
 }
 
 .footer-col h4{
@@ -430,7 +612,6 @@ button.menuItem:hover, button.menuItem.is-open {
 
 @media(max-width: 574px){
 	.footer-col{
-		width: 100%;
 		margin-bottom: 30px;
 	}
 }
@@ -464,4 +645,116 @@ button.menuItem:hover, button.menuItem.is-open {
 .emitir:hover{
 	color: #fff;
 	background-color: #1C1C1C;
+}
+
+/*LOGO*/
+
+a:hover {
+	opacity: 0.7;
+  }
+  
+  .logo {
+	font-size: 24px;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	color: #FFEE11;
+  }
+  
+  nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+	background: #23232e;
+	height: 8vh;
+  }
+
+  
+  .nav-list {
+	list-style: none;
+	display: flex;
+  }
+  
+  .nav-list li {
+	letter-spacing: 3px;
+	margin-left: 32px;
+  }
+  
+  .nav-list li a{
+	color: #FFEE11; 
+  }
+  .mobile-menu {
+	display: none;
+	cursor: pointer;
+  }
+  
+  .mobile-menu div {
+	width: 32px;
+	height: 2px;
+	background: #fff;
+	margin: 8px;
+	transition: 0.3s;
+  }
+  
+  @media (max-width: 999px) {
+	.nav-list {
+	  position: absolute;
+	  top: 12vh;
+	  right: 0;
+	  width: 50vw;
+	  height: 92vh;
+	  background: #23232e;
+	  flex-direction: column;
+	  align-items: center;
+	  justify-content: space-around;
+	  transform: translateX(100%);
+	  transition: transform 0.3s ease-in;
+	  z-index: 999;
+	}
+	.nav-list li {
+	  margin-left: 0;
+	  opacity: 0;
+	}
+	.mobile-menu {
+	  display: block;
+	}
+  }
+  
+  .nav-list.active {
+	transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+	from {
+	  opacity: 0;
+	  transform: translateX(50px);
+	}
+	to {
+	  opacity: 1;
+	  transform: translateX(0);
+	}
+  }
+  
+  .mobile-menu.active .line1 {
+	transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+	opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+	transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+@media (max-width: 572px){
+	.slider{
+		display: none;
+	}
+}
+
+@media (max-width: 572px){
+	.topo{
+		display: none;
+	}
 }

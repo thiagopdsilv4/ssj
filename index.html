@@ -4,53 +4,66 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
         <title>SEC São Jerônimo</title>
         <link rel="stylesheet" href="css/estilo.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+        
+
     </head>
     <body id="home">
         
         <div id="container">
         <!--Início topo-->
-
-            <div id="contato-topo">
-                <span>
-                    Rua Coronel Soares de Carvalho, n&deg 590 sala 01 Centro São Jerônimo
-                </span>
-            </div>
+        <div id="contato-topo">
+                    <span>
+                        Rua Coronel Soares de Carvalho, n&deg 590 sala 01 Centro São Jerônimo
+                    </span>
+                </div>
         
-            <div id="topo">
-                <ul id="navegacao">
-                    <li class="contato">
-                        <a id="home" href="index.html">Inicio</a>
-                    </li>
-                    <li class="sindicato">
-                        <a href="#sindicato">Sindicato</a>
-                    </li>
+            <div id="topo" class="topo">      
+                    <ul class="navegacao">
+                        <li class="contato">
+                            <a id="home" href="index.html">Inicio</a>
+                        </li>
+                        <li class="sindicato">
+                            <a href="#sindicato">Sindicato</a>
+                        </li>
 
-                    <li>
-                        <a id="guias" href="https://sweb.diretasistemas.com.br/prosindweb/index.php?sind=1331">Guias</a>
-                    </li>
+                        <li>
+                            <a id="guias" href="https://sweb.diretasistemas.com.br/prosindweb/index.php?sind=1331">Guias</a>
+                        </li>
 
-                    <li>
-                        <a id="convencoes" href="convencoes.html">Convenções</a>
-                        <ul>
-                            <li><a href="">Circulares 2022</a></li>
-                            <li><a href="">Opcao1</a></li>
-                            <li><a href="">Opcao1</a></li>
-                            <li><a href="">Opcao1</a></li>
-                        </ul>
-                    </li>
+                        <li>
+                            <a id="convencoes" href="convencoes.html">Convenções</a>
 
-                    <li>
-                        <a href="#contato">Contato</a>
-                    </li>
-                </ul>
+                        </li>
+
+                        <li>
+                            <a href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
             </div> <!--fim topo-->
-            
+
+            <!--MENU TOPO MOBILE-->
+            <nav>
+                <a class="logo" href="/">Sec São Jerônimo</a>
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sindicato">Sindicato</a></li>
+                    <li><a href="https://sweb.diretasistemas.com.br/prosindweb/index.php?sind=1331">Guias</a></li>
+                    <li><a href="convencoes.html">Convenções</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <!--INICIO Slide images-->
             <div class="slider">
                 <div class="slides">
                     <!--Radio Buttons-->
@@ -78,7 +91,7 @@
                     </div>
 
                     <div class="slide">
-                        <img src="imagens/doutor.jpg" alt="Imagem 2">
+                        <img src="imagens/sec2.jpeg" alt="Imagem 2">
                     </div>
 
                     <div class="slide">
@@ -110,9 +123,60 @@
             </div>
         </div><!--fim container-->
 
+        <div id="body-0">
+            <div class="bodyLimitador2">
+
+                <div class="boxModal">
+                    <h3 class="tituloModal">Titulo para modal</h3>
+    
+                    <p>
+                        Resumo genérico kkkkkk
+                    </p>
+    
+                    <button class="trigger" onclick="showModal()">Leia Mais </button>
+    
+                    <div class="modal" id="modal">
+                        <div class="modal-content">
+                            <span class="close-button" onclick="closeModal()">
+                                &times;
+                            </span>
+                            <p> Em uma forma de pudim, derreta o açúcar, deixando a forma caramelizada.</p>
+                            <p> 2. Coloque os ovos no liquidificador, com o leite condensado, o leite e o creme de leite.</p>
+                            <p> 3. Logo em seguida, bata por 20 minutos.</p>
+                            <p> 4. Despeje na forma caramelizada e coloque no forno preaquecido, em banho-maria, a 180 graus Celsius.</p>  
+                                                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="boxModal">
+                    <h3 class="tituloModal">Titulo para modal</h3>
+    
+                    <p>
+                        Resumo genérico kkkkkk
+                    </p>
+    
+                    <button class="trigger" onclick="showModal()">Leia Mais </button>
+    
+                    <div class="modal" id="modal">
+                        <div class="modal-content">
+                            <span class="close-button" onclick="closeModal()">
+                                &times;
+                            </span>
+                            <p> Em uma forma de pudim, derreta o açúcar, deixando a forma caramelizada.</p>
+                            <p> 2. Coloque os ovos no liquidificador, com o leite condensado, o leite e o creme de leite.</p>
+                            <p> 3. Logo em seguida, bata por 20 minutos.</p>
+                            <p> 4. Despeje na forma caramelizada e coloque no forno preaquecido, em banho-maria, a 180 graus Celsius.</p>  
+                                                
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+
         <div id="body-1" >
             <div class="caixaTitulo">
-                <h3 class="tituloSec"> Homologação</h3>
+                <h2 class="tituloSec"> Homologação</h2>
             </div>
             <div class="bodyLimitador">            
                 <div class="menuDrop">
@@ -136,7 +200,31 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
+
+        <div id="body-2">
+            <div class="caixaTitulo">
+                <h2 class="tituloSec">Localização </h2>
+            </div>
+            <div class="bodyLimitador3">
+                <div class="mapaGoogle">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.694904864032!2d-51.72550138435358!3d-29.959453181913293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951bbfb4fa2adbb5%3A0x5f941e255724cc3d!2sR.%20Cel.%20Soares%20de%20Carvalho%2C%20590%20-%20Centro%2C%20S%C3%A3o%20Jer%C3%B4nimo%20-%20RS%2C%2096700-000!5e0!3m2!1spt-BR!2sbr!4v1656539945363!5m2!1spt-BR!2sbr" width="750" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </div>
+                <div class="infoAtendimento">
+                    <h3>Horário de Atendimento</h3>
+                    <div class="conteudoAtendimento">
+                        "Nos visite" sempre que possível "
+                        <br>
+                        <b>Seg - Sex</b>
+                        " : 10 AM até 5 PM "
+                        <b>Sáb - Dom</b>
+                        " : 10 AM até 2 PM "
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer" id="contato">
             <div class="container">
                 <div class="row">
                     <div class="footer-col" >
@@ -199,5 +287,7 @@
         </footer>
         <script src="js/scriptMenuDrop.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/scriptModal.js"></script>
+        <script src="js/mobile-navbar.js"></script>
     </body>
 </html>
